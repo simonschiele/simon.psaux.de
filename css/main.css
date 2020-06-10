@@ -31,7 +31,7 @@ a:hover {
 
 .container {
     max-width: 850px;
-    margin-top: 15%;
+    margin-top: 12%;
     text-align: center;
 }
 
@@ -41,17 +41,37 @@ a:hover {
 }
 
 .icon {
-    font-size: 6rem;
+    font-size: 3rem;
+    padding: 1rem;
 }
 
-/* removed atm, due to mobile issue
-#cvicon {
-    text-align: right;
+.layoutcolumn {
+    display: none;
 }
-*/
+
+.socialdesc {
+    display: none;
+}
+
+#socialmobile {
+    text-align: center;
+    display: block;
+}
+
+#social {
+    display: none;
+}
+
+#cvicon {
+    text-align: center;
+    margin-bottom: 0px;
+}
 
 #cvdesc {
-    text-align: left;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* debug stuff */
@@ -69,4 +89,37 @@ a:hover {
 
 .border_yellow {
     border: 1px solid yellow;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    .icon {
+        font-size: 6rem;
+    }
+
+    #socialmobile {
+        display: none;
+    }
+
+    #social {
+        display: block;
+    }
+
+    #cvicon {
+        text-align: right;
+        margin-bottom: 4rem;
+    }
+
+    #cvdesc {
+        text-align: left;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .socialdesc {
+        display: block;
+    }
+    .layoutcolumn {
+        display: block;
+    }
 }
