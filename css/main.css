@@ -62,6 +62,18 @@ a:hover {
     display: none;
 }
 
+#keysicon {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#keysdesc {
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 #cvicon {
     text-align: center;
     margin-bottom: 0px;
@@ -103,6 +115,17 @@ a:hover {
 
     #social {
         display: block;
+    }
+
+    #keysicon {
+        text-align: right;
+        margin-bottom: 4rem;
+    }
+
+    #keysdesc {
+        text-align: left;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
 
     #cvicon {
